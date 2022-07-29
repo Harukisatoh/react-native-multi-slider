@@ -73,7 +73,7 @@ export interface MultiSliderProps {
     markerStyle?: ViewStyle;
     pressedMarkerStyle?: ViewStyle;
     stepStyle?: ViewStyle;
-    stepLabelStyle?: ViewStyle;
+    stepLabelStyle?: TextStyle;
     selectedStepLabelStyle?: TextStyle;
     stepMarkerStyle?: ViewStyle;
     valuePrefix?: string;
