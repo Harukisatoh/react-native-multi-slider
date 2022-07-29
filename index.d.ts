@@ -4,7 +4,7 @@
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 import * as React from "react";
-import { ViewStyle } from "react-native";
+import { TextStyle, ViewStyle } from "react-native";
 
 
 export interface StepsAsProps {
@@ -74,6 +74,7 @@ export interface MultiSliderProps {
     pressedMarkerStyle?: ViewStyle;
     stepStyle?: ViewStyle;
     stepLabelStyle?: ViewStyle;
+    selectedStepLabelStyle?: TextStyle;
     stepMarkerStyle?: ViewStyle;
     valuePrefix?: string;
     valueSuffix?: string;

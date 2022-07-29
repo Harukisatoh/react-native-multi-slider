@@ -460,6 +460,9 @@ export default class MultiSlider extends React.Component {
       this.props.stepMarkerStyle,
     ];
 
+    const selectedStepLabelStyle = this.props.selectedStepLabelStyle || {};
+    const getSelectedStepLabelStyle = (value) => this.state.valueOne === value ? selectedStepLabelStyle : {}
+
     return this.optionsArray.map((number, index) => {
       var step = this.stepsAs[index];
       return (
@@ -478,7 +481,7 @@ export default class MultiSlider extends React.Component {
             )}
           {this.props.showStepLabels && (
             <Text
-              style={textStyles}
+              style={[...textStyles, getSelectedStepLabelStyle(number)]}
             >{`${step.prefix}${step.stepLabel}${step.suffix}`}</Text>
           )}
         </View>
